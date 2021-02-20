@@ -1,7 +1,7 @@
 const { listContacts, getContactById, removeContact, addContact } = require('./contacts');
 const argv = require('yargs').argv;
+// const argv = yargs(hideBin(process.argv)).argv;
 
-// TODO: рефакторить
 function invokeAction({ action, id, name, email, phone }) {
   switch (action) {
     case 'list':
